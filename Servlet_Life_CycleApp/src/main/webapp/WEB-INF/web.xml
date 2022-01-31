@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <!-- <display-name>Servlet_Life_CycleApp</display-name> -->
+  <welcome-file-list>
+    <welcome-file>page.html</welcome-file>
+   
+  </welcome-file-list>
+ <servlet>
+<servlet-name>lifecycle</servlet-name>
+<servlet-class>com.nk.servlet.LifeCycle</servlet-class>
+<load-on-startup>1</load-on-startup>
+<!-- <init-param>
+<param-name>jdbcurl</param-name>
+<param-value>jdbc:oracle:thin:@localhost:1521:xe</param-value>
+</init-param>
+<init-param>
+<param-name>username</param-name>
+<param-value>system</param-value>
+</init-param>
+<init-param>
+<param-name>password</param-name>
+<param-value>manager</param-value>
+</init-param> -->
+</servlet>
+<servlet-mapping>
+<servlet-name>lifecycle</servlet-name>
+<url-pattern>/lifecycleurl</url-pattern>
+</servlet-mapping>
+</web-app>
